@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.dishes {
+  padding: 200px 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  transform: translateY(150px);
+  opacity: 0;
+
+  transition: 1s all ease-in;
+}
+
+.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.search {
+  display: flex;
+
+  color: white;
+  position: relative;
+  width: 80%;
+  height: 60px;
+  border: 2px solid white;
+  box-shadow: 0 0 20px 0 black;
+  border-radius: 50px;
+}
+
+.search_typing {
+  position: absolute;
+
+  height: 60px;
+
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.search_typing p {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.search_icon {
+  margin-top: 7px;
+}
+
+.search_typing p span {
+  margin-left: 20px;
+}
+
+.search_typing div {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+.search_box {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  font-size: 2rem;
+  padding: 0 30px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+}
+
+.food_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 30px;
+}
+
+.food_card {
+  margin: 30px;
+}
+
+.addMeal {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #00a2ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 100%;
+  box-shadow: 0 0 20px 0 black;
+  z-index: 90;
+  transition: 0.2s all ease-in;
+}
+
+.addMeal:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.not_accessible_dishes {
+  padding: 10px 10px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .search_typing p {
+    font-size: 1rem;
+  }
+
+  .search_typing p span {
+    margin-left: 10px;
+  }
+  .search_typing div {
+    margin-left: 5px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 554px) {
+  .not_accessible_dishes {
+    font-size: 1rem;
+    padding: 10px 10px;
+  }
+}

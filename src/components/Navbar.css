@@ -1,0 +1,154 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #192841;
+}
+
+.nav_logo {
+  padding: 20px 30px;
+}
+
+.menu,
+.menu_close {
+  display: none;
+}
+
+.nav_options {
+  display: flex;
+  align-items: center;
+  padding: 30px 40px;
+  color: black !important;
+}
+
+.nav_options p {
+  margin: 0 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  border: 3px solid #00a2ff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: 0.2s all ease-in;
+  color: white;
+}
+
+.nav_options p:hover {
+  background-color: #00a2ff;
+  cursor: pointer;
+}
+
+.nav_user {
+  border: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.nav_user:hover {
+  background-color: transparent !important;
+  cursor: default;
+}
+
+.nav_user p {
+  margin: 2px 0;
+  background-color: #00a2ff;
+  color: white;
+}
+
+.nav_user p:hover,
+.nav_user span:hover {
+  cursor: default;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+@media (max-width: 865px) {
+  .nav_logo {
+    transform: scale(0.8);
+    padding: 0px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    background-color: #00a2ff;
+    border-radius: 100%;
+    padding: 10px;
+    z-index: 101;
+  }
+
+  .menu:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
+
+  .menu_close {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 210px;
+    z-index: 101;
+  }
+
+  .menu_close:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+  }
+
+  .nav_options_cover {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 0;
+
+    transition: 0.2s all ease-in;
+  }
+
+  .nav_options {
+    display: none;
+    background-color: white;
+    color: black !important;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 120px;
+    flex: 1;
+    position: relative;
+  }
+
+  .nav_options p {
+    margin: 20px 0;
+    color: black !important;
+  }
+
+  .blue_bottom {
+    height: 40px;
+    width: 200px;
+    background-color: #00a2ff;
+  }
+}

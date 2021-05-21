@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.meal_info {
+  padding: 180px 0 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease-in;
+}
+
+.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.info_content {
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 0 20px 0 black;
+}
+
+.info_content label {
+  width: 80%;
+  padding-left: 10px;
+  font-size: 1.3rem;
+  padding: 20px 0 10px;
+}
+
+.info_content input {
+  width: 80%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px 0 black;
+  background-color: #d8d8d8;
+}
+
+.info_buttons {
+  margin: 30px 0 10px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info_buttons button {
+  font-size: 1rem;
+  padding: 10px;
+}

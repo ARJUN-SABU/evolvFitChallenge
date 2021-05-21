@@ -1,0 +1,66 @@
+.home_screen {
+  color: white;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 200px 0px 100px;
+
+  position: relative;
+
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease-in;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.home_title {
+  margin: 0 40px 50px;
+  text-align: center;
+  color: rgb(238, 237, 237);
+}
+
+.home_title h1 {
+  font-size: 4rem;
+}
+
+.home_description {
+  margin: 0 40px 50px;
+  text-align: center;
+}
+
+.home_description p {
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+
+button {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: #00a2ff;
+  color: white;
+  transition: 0.2s all ease-in;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 865px) {
+  .home_title h1 {
+    font-size: 3.2rem;
+  }
+}

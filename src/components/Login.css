@@ -1,0 +1,141 @@
+.login_card {
+  padding: 150px 0;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 1s all ease-in;
+}
+
+.login_content {
+  justify-self: center;
+  width: 700px;
+  height: 600px;
+  position: relative;
+  margin: 70px 30px;
+  transition: transform 0.8s linear;
+  transform-style: preserve-3d;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.login_user,
+.login_admin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #22303c;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 black;
+  position: absolute;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.login_admin {
+  transform: rotateY(0.5turn);
+}
+
+.title {
+  font-size: 1.6rem;
+  margin: 40px 50px 4px;
+  transform: translateZ(100px);
+}
+
+.subtitle {
+  margin: 5px 50px 0;
+  transform: translateZ(100px);
+}
+
+.login_body {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px 60px;
+  transform: translateZ(100px);
+}
+
+.login_body input {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px 0;
+  background-color: #29547a;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 0 10px 0 black;
+}
+.login_body label {
+  margin: 20px 0 0;
+}
+
+.login_body button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  width: 120px;
+  padding: 5px 15px;
+  margin: 50px 0 50px;
+  box-shadow: 0 0 20px 0 black;
+}
+
+.login_body p {
+  line-height: 1.5;
+}
+
+.signUpButton {
+  background-color: #8ed0f6;
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  border-radius: 50px;
+  margin: 10px 0 0 0px;
+  box-shadow: 0 0 20px 0 black;
+  color: black;
+  font-weight: 700;
+  transition: 0.2s all ease-in;
+}
+.signUpButton:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.control_flip {
+  position: absolute;
+  display: flex;
+}
+
+.control_button {
+  font-size: 1rem;
+  padding: 20px;
+  margin: 15px 15px;
+  border-radius: 0;
+}
+
+.control_button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.control_admin {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.control_user {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: white;
+  color: black;
+  pointer-events: none;
+}
