@@ -4,7 +4,7 @@ https://arjun-sabu.github.io/evolvFitChallenge/
 
 # admin 
 - email: admin@evolvfit.com
-- admin123
+- pass: admin123
 
 
 # Getting Started with Create React App
